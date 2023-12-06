@@ -1,0 +1,68 @@
+.divider:after, 
+
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: rgb(208, 4, 4);
+}
+
+.h2{
+    margin-bottom: 20%;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 3.5%;
+}
+.img-fluid{
+    margin-bottom: 50%;
+}
+.navbar {
+    background-color: rgb(79, 50, 50);
+    overflow: hidden;
+    display: flex; 
+    justify-content: space-between; 
+    height: 64px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex; 
+    align-items: flex-end;
+
+}
+
+.navbar li {
+    justify-content: right;
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex;
+
+}
+
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.navbar b:hover {
+    background-color: rgba(29, 25, 25, 0.479) ;
+    color: rgb(220, 125, 125);
+}
+.navbar a:hover{
+    color: rgb(194, 134, 37);
+}
+
+.navbar .img {
+    margin-right: 35px;
+}

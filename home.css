@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(191, 191, 151);
+}
+
+.navbar {
+    background-color: rgb(79, 50, 50);
+    overflow: hidden;
+    display: flex; 
+    justify-content: space-between; 
+    height: 64px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin-right: 25%;
+    padding: 0;
+    overflow: hidden;
+    display: flex; 
+    align-items: flex-end;
+
+}
+
+.navbar li {
+    justify-content: right;
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex;
+
+}
+.li2{
+    margin-bottom: 1.5%;
+
+}
+
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.navbar b:hover {
+    background-color: rgba(29, 25, 25, 0.479) ;
+    color: rgb(231, 99, 99);
+}
+.navbar a:hover{
+    color: rgb(194, 134, 37);
+}
+
+.navbar .img {
+    margin-right: 35px;
+}
+.carousel-inner carousel-item active .d-block w-100{
+    width: 15px;
+    padding: 100px;
+}
+.bgPhoto{
+    margin-top: auto;
+    background-image: url("BgPhoto2.jpg");
+    background-size: 30%,50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inp{
+    border-radius: 7px;
+}
+.sb{
+    border-radius: 7px;
+}
+.b:hover{
+    border-radius: 45%;
+    
+}
+.swiperWrapper{
+    background-color: rgb(222, 223, 187);
+    padding-inline: 5%;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 50px;
+}
+.swiperWrapper h2{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 3.5%;
+}
+.slideImage{
+    margin-bottom: 30%;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.prev{
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.next{
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.prev img{
+    width: 32px;
+}
+.next img{
+    width: 32px;
+}

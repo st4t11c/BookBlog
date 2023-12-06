@@ -1,0 +1,63 @@
+.body{
+    background-color: chocolate;
+}
+.divider:after, 
+
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: rgb(208, 4, 4);
+}
+
+.navbar {
+    background-color: rgb(79, 50, 50);
+    overflow: hidden;
+    display: flex; 
+    justify-content: space-between; 
+    height: 64px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex; 
+    align-items: flex-end;
+
+}
+
+.navbar li {
+    justify-content: right;
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex;
+
+}
+.li2{
+    margin-bottom: 1.5%;
+
+}
+
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: rgb(194, 134, 37);
+}
+
+.navbar b:hover {
+    background-color: rgba(29, 25, 25, 0.479) ;
+    color: rgb(220, 125, 125);
+}
+
+
+.navbar .img {
+    margin-right: 35px;
+}
