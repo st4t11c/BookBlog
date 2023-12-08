@@ -1,5 +1,14 @@
-.divider:after, 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+  }
 
+.divider:after, 
 .divider:before {
 content: "";
 flex: 1;
@@ -26,16 +35,20 @@ background: rgb(208, 4, 4);
     display: flex; 
     justify-content: space-between; 
     height: 64px;
+    width: 100%;
+    
 }
-
+.li2{
+    margin-left: 3%;
+}
 .navbar ul {
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 1.1%;
     padding: 0;
     overflow: hidden;
     display: flex; 
     align-items: flex-end;
-
+    
 }
 
 .navbar li {
@@ -46,7 +59,13 @@ background: rgb(208, 4, 4);
 
 }
 
-
+header {
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 41.2%;
+  }
 .navbar a {
     display: block;
     color: white;
@@ -66,3 +85,37 @@ background: rgb(208, 4, 4);
 .navbar .img {
     margin-right: 35px;
 }
+
+  form {
+    margin-top: 70px;
+    padding: 20px;
+   
+    margin-left: 55%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 160%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #030703;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 70%;
+  }
+
+  button:hover {
+    background-color: bisque;
+  }

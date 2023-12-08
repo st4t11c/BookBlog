@@ -1,3 +1,8 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: beige;
+}
 .navbar {
     background-color: rgb(79, 50, 50);
     overflow: hidden;
@@ -46,4 +51,115 @@
 
 .navbar .img {
     margin-right: 35px;
+}
+.h2{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.photos{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items:  center;
+	align-content: space-between;
+
+}
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 29px;
+}
+.box{
+    background-color: whitesmoke;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+    
+}
+.image img{
+   width: 100%;
+   height: 350px;
+}
+.content{
+    padding: 10px;
+    text-align: center;
+}
+.reviews{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.f{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+    align-items: baseline;
+    align-content: stretch;
+    color:bisque;
+    background-color: rgb(98, 69, 69);
+}
+.ff{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+}
+.fm{
+    background-color: rgb(98, 69, 69);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.fl{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    max-width: 300px;
+    margin-left: 100px;
+}
+.fc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: flex-start;
+    
+}
+.fr{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: stretch;
+    align-content: flex-start;
+}
+.fi{
+    background-color: rgb(98, 69, 69);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    bottom: 0;
+    
 }
