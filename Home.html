@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="b">
+          <a href="Books.html">
+          <img src="book1.png" class="img" style="width: 37px;  margin-bottom: -7%;" /><b style="font-family: initial;">BOOKBLOG</b>
+        </a>
+        </ul>
+        
+        <ul>
+          <li>
+            <a href="Home.html" style="font-family:initial ;">Home</a></li>
+          <li>
+            <a href="About.html"style="font-family:initial ;">About Us</a></li>
+          <li>
+            <a href="Books.html"style="font-family:initial ;">Books</a></li>
+        </ul>
+        <li class="li2">
+          <a  href="Login.html"> <img src="SignIn.png" alt="SignIn" style="width: 35px;  margin-bottom: -17%;" >Sign In</a></li>
+      </nav>
+      
+    </header>
+    <div class="bgPhoto">
+      
+      <input
+        class="inp"
+        type="text"
+        placeholder="Search"
+        style="width: 280px; height: 25px"
+      />
+      <button
+        class="sb"
+        style="
+          width: 50px;
+          height: 25px;
+          align-items: center;
+          background-color: rgb(111, 231, 111);
+        "
+      >
+        <img
+          src="search.png"
+          style="width: 13px; margin-top: 5%;"
+          alt="search"
+        />
+      </button>
+    </div>
+    <div class="h2">
+      <h2>Award Winning Books</h2>
+    </div>
+    <br>
+    <div class="box-container" >
+      <div class="box">
+        <div class="image">
+            <img src="TheWingmen.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="Monkey.jpg" alt="">
+        </div>
+    </div>
+
+      <div class="box">
+        <div class="image">
+            <img src="Bear.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="Trust.jpg" alt="">
+        </div>
+    </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="Wizard.jpg" alt="">
+          </div>
+          <div class="content">
+              <img src="66.jpg" alt="">
+          </div>
+      </div>
+      <div id="imazhet">
+        <header>
+          <img id="slideshow">
+        </header>
+        
+        <button onclick="changeImg()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+        </button>
+    </div>
+    </div>
+    
+  <br>
+
+  <footer class="footer">    
+    <div class="f">
+        <h2 style=" margin-right: 9%;">BookBlog</h2>
+        <h2 style="margin-right: 10%;">Our Links</h2>
+        <div class="ff">
+            <a href="www.facebook.com"><img src="facebook.png" alt="" width="32px" height="32px"></a>
+            <a href="www.twitter.com"><img src="twitter.png" alt="" width="32px" height="32px" style="margin-left: 80%;"></a>
+            <a href="www.instagram.com"><img style="margin-left: 150%;" src="instagram.png" alt="" width="32px" height="32px" ></a>
+            
+        </div>
+    </div>
+    <div class="fm">
+            <div class="fl">
+                <p>BookBlog, the place for a book lover.</p>
+            </div>
+            <div class="fc" style="margin-right: 7%;">
+                <p><a href="Home.html" style="color: bisque;">Home</a></p>
+                <p><a href="About.html"style="color: bisque;">About</a></p>
+                <p><a href="Books.html"style="color: bisque;">Books</a></p>
+            </div>
+            <div class="fr" style="margin-right: 8.2%;">
+                <a href="" style="color: bisque;"><p>Terms of use</p></a>
+                <a href="" style="color: bisque;"><p>Privacy Policy</p></a>
+            </div>
+        </div>
+        <div class="fi" >
+        <p style="margin-left: 40%;"> ©Copyright ~ 2023 BookBlog. All rights reserved.</p>
+          
+        </div>
+    </footer>
+
+  <script>
+  let i=0;
+        let imgArray=["Study.jpg","AnImmenseWorld.jpg","G-Man.jpg", "BreakingThrough.jpg","FireWeather.jpg","George.jpg","Hamnet.jpg","TheSwimmers.jpg","Aeroplan.jpg","MadHoney.jpg","America.jpg","City.jpg","Demon.jpg","Heaven.jpg","Wrong.jpg","Forest.jpg","Sea.jpg","River.jpg"];
+
+        function changeImg(){
+            document.getElementById('slideshow').src=imgArray[i];
+            if(i<imgArray.length-1){
+                i++;
+            }
+            else{
+                i=0;
+            }
+        }
+
+        document.addEventListener(onload,changeImg());
+      </script>
+    
+    
+
+    
+  </body>
+</html>
