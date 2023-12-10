@@ -34,7 +34,7 @@ background: rgb(208, 4, 4);
 }
 
 .password-input {
-  width: 160%;
+  width: 120%;
   padding: 8px;
   margin-bottom: 16px;
   box-sizing: border-box;
@@ -43,7 +43,7 @@ background: rgb(208, 4, 4);
 
 .toggle-password {
   position: absolute;
-  left: 160%;
+  left: 120%;
   top: 30%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -66,7 +66,7 @@ background: rgb(208, 4, 4);
   justify-content: space-between; 
   height: 73px;
   width: 100%;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
 }
 .li2{
   font-family: initial;
@@ -128,7 +128,7 @@ label {
 }
 
 input {
-  width: 160%;
+  width: 120%;
   padding: 8px;
   margin-bottom: 16px;
   box-sizing: border-box;
@@ -152,6 +152,7 @@ button {
 button:hover {
   background-color: bisque;
 }
+
 .footer{
   background-color: rgb(98, 69, 69);
   flex-wrap: wrap;
@@ -163,14 +164,18 @@ button:hover {
   bottom: 0;
   width: 100%;
   font-family:cursive ;
-  height: 100px;
+  height: 220px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-size: smaller;
+  margin-top: 15%;
 }
 .f{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
- 
+  font-size: smaller;
   align-items: baseline;
   align-content: stretch;
   color:bisque;
@@ -183,6 +188,7 @@ button:hover {
   justify-content: flex-end;
   align-items: center;
   align-content: stretch;
+  font-size: smaller;
 }
 .fm{
   background-color: rgb(98, 69, 69);
@@ -192,6 +198,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  font-size: smaller;
 }
 .fl{
   display: flex;
@@ -202,6 +209,7 @@ button:hover {
   align-content: center;
   max-width: 300px;
   margin-left: 100px;
+  font-size: smaller;
 }
 .fc{
   display: flex;
@@ -219,6 +227,7 @@ button:hover {
   justify-content: center;
   align-items: stretch;
   align-content: flex-start;
+  font-size: smaller;
 }
 .fi{
   background-color: rgb(98, 69, 69);
@@ -227,6 +236,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  font-size: smaller;
   align-content: center;
   position: relative;
   bottom: 0;
