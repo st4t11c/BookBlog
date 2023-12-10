@@ -4,69 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="login.css">
-  
+
   <title>LogIn</title>
 </head>
 
-<body style="background-color:rgb(175, 134, 104);">
+<body style="background-color:bisque;">
   <header>
     <nav class="navbar">
       <ul class="b">
-        <a href="https://www.bookbub.com/blog/read-free-books-online-now">
-          <img src="book1.png" width="45px" class="img" style="width: 40px; pointer-events: none; margin-bottom: -19%;" />
+        <a href="Books.html">
+          <img src="book1.png" class="img" style="width: 37px;  margin-bottom: -7%;" /><b style="font-family: initial;">BOOKBLOG</b>
         </a>
       </ul>
       
       <ul>
-        <li><a href="Home.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Books.html">Books</a></li>
-        
-         
-
+        <li>
+          <a href="Home.html" style="font-family:initial ;">Home</a></li>
+        <li>
+          <a href="About.html"style="font-family:initial ;">About Us</a></li>
+        <li>
+          <a href="Books.html"style="font-family:initial ;">Books</a></li>
       </ul>
-      <li class="li2">
-        <a  href="Login.html" > <img src="SignIn.png" alt="SignIn" style="width: 35px;  margin-bottom: 2%;"> Sign In</a></li>
+      <ul>
+        <li class="li2">
+          <a href="Home.html">Continue as<img src="Continue as Guest.png" alt="Guest" style="width: 25px; margin-top: 5%;">Guest</a></li>
+      </ul>
     </nav>
   </header>
 
+  <div>
+    <h2 style="margin-left: 40%; margin-top: -30%; font-family:cursive ;">BOOKBLOG</h2>
+    <img src="Opening-Book.gif" alt="">
+  </div>
+
   <form class="up" onsubmit="return validateForm()">
+    <h1 class="login">LOG IN</h1>
+    <img style="width: 100px; margin-left: 60%; margin-top: -30%;" src="Register Arrow.png" alt="">
     <label for="email" >Email:</label>
     <input type="email" id="email" name="email"  required>
-  
+
 
     <label for="password">Password:</label>
-    <input type="password" id="password"  name="password" required>
-    
 
-    <button type="submit">Sign In</button>
+    <div class="password-container">
+      <input type="password" id="password" name="password" required class="password-input">
+      <span id="togglePassword" class="toggle-password" onclick="togglePasswordVisibility()">🙈</span>
+    </div>
+    <button type="submit" style="background-color: bisque; color: rgb(0, 0, 0); font-size: 18px;">Sign In</button>
     <br>
     <br>
-    <button>Register</button>
-     
+    <div style=" margin-left: 74%;">
+      <a href="Register.html" type="button" style="color: rgb(0, 0, 0);">Register</a>
+      </div>
   </form>
-   
-   
   
+
+
+  <footer class="footer">    
+    <div class="f">
+        <h2 style=" margin-right: 9%;">BookBlog</h2>
+        <h2 style="margin-right: 10%;">Our Links</h2>
+        <div class="ff">
+            <a href="www.facebook.com"><img src="facebook.png" alt="" width="32px" height="32px"></a>
+            <a href="www.twitter.com"><img src="twitter.png" alt="" width="32px" height="32px" style="margin-left: 80%;"></a>
+            <a href="www.instagram.com"><img style="margin-left: 150%;" src="instagram.png" alt="" width="32px" height="32px" ></a>
+            
+        </div>
+    </div>
+    <div class="fm">
+            <div class="fl">
+                <p>BookBlog, the place for a book lover.</p>
+            </div>
+            <div class="fc" style="margin-right: 7%;">
+                <p><a href="Home.html" style="color: bisque;">Home</a></p>
+                <p><a href="About.html"style="color: bisque;">About</a></p>
+                <p><a href="Books.html"style="color: bisque;">Books</a></p>
+            </div>
+            <div class="fr" style="margin-right: 8.2%;">
+                <a href="" style="color: bisque;"><p>Terms of use</p></a>
+                <a href="" style="color: bisque;"><p>Privacy Policy</p></a>
+            </div>
+        </div>
+        <div class="fi" >
+        <p style="margin-left: 40%;"> ©Copyright ~ 2023 BookBlog. All rights reserved.</p>
+          
+        </div>
+    </footer>
   <script>
+    const passwordInput = document.querySelector('.password-input');
+  const togglePasswordButton = document.getElementById('togglePassword');
+
+  togglePasswordButton.addEventListener('click', function () {
+    passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+    togglePasswordButton.textContent = passwordInput.type === 'password' ? '🙈' : '🙊';
+  });
     function validateForm() {
-      
+
       var email = document.getElementById('email').value;
-      
+
 
       var password = document.getElementById('password').value;
-      
 
-  
-      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+      var emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
 
       if (!emailRegex.test(email)) {
         alert('please type a valid email format');
         return false;
       }
-      
 
-      
+
+
       if (password.length < 8) {
         alert('password should be 8 characters long');
         return false;

@@ -28,7 +28,8 @@ body{
     justify-items: flex;
 
 }.li2{
-    margin-bottom: 1.5%;
+    margin-bottom: 1%;
+    font-family:monospace ;
 
 }
 
@@ -95,7 +96,10 @@ body{
     font-weight: bold;
     color: #333;
 }
-
+.footer{
+    font-family:cursive ;
+    color: bisque;
+}
 .f{
     display: flex;
     flex-direction: row;
@@ -126,6 +130,7 @@ body{
 }
 .fl{
     display: flex;
+    color: bisque;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -161,5 +166,6 @@ body{
     align-content: center;
     position: relative;
     bottom: 0;
+    color: bisque;
     
 }
