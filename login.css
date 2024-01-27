@@ -1,244 +1,182 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0%;
-  padding: 0%;
 }
 
-.divider:after, 
-.divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: rgb(208, 4, 4);
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: rgb(79, 50, 50);
 }
 
-.h2{
-  margin-bottom: 20%;
-  font-family:Georgia, 'Times New Roman', Times, serif ;
+.navbar ul {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding-top: 3.5%;
+  margin-left: -35%;
 }
-.img-fluid{
-  margin-bottom: 50%;
+
+.navbar ul li {
+  margin-left: 20px;
 }
-.password-container {
+
+.navbar ul li:first-child {
+  margin-left: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ffd700;
+}
+
+
+.logo img{
+  width: 10%;
+}
+
+.logo h2{
+  margin-top: -8%;
+  margin-left: 15%;
+}
+
+.logged-in-user {
+  margin-right: 20px;
   position: relative;
 }
 
-.password-input {
-  width: 120%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-
-.toggle-password {
+.dropdown-menu {
+  display: none;
   position: absolute;
-  left: 120%;
-  top: 30%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  font-size: 25px;
-
-}
-.toggle-password :hover{
-  color: rgb(175, 134, 104);
-}
-.login{
-  margin-left: 60%;
-  margin-bottom: 35%;
-  font-size: 25px ;
-  font-family:cursive ;
-}
-.navbar {
-  background-color: rgb(79, 50, 50);
-  overflow: hidden;
-  display: flex; 
-  justify-content: space-between; 
-  height: 73px;
-  width: 100%;
-  margin-bottom: 5%;
-}
-.li2{
-  font-family: initial;
-}
-.navbar ul {
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-  display: flex; 
-  align-items: flex-end;
-  
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  padding: 10px;
 }
 
-.navbar li {
-  justify-content: right;
-  display: flex;
-  align-items: flex-end;
-  justify-items: flex;
-
-}
-
-header {
-  color: #fff;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  margin-bottom: 41%;
-}
-.navbar a {
+.logged-in-user.active .dropdown-menu {
   display: block;
-  color: white;
+}
+
+.logged-in-user .dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+.logged-in-user .dropdown-menu a:hover {
+  background-color: #555;
+}
+
+
+#searchBackground{
+  width: 100%;
+  height: 500px;
+}
+
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add box shadow for better visibility */
+}
+
+.search-box input[type="text"] {
+  width: 200px; /* Adjust width as needed */
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.search-box button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff; /* Adjust button background color */
+  color: #fff;
+  cursor: pointer;
+}
+
+.container{
+  background-color: #FFE4C4;
+}
+
+.container h1{
   text-align: center;
-  padding: 5px 15px;
+}
+
+#wingMen{
+  width: 20%;
+  height: 500px;
+}
+
+#bear{
+  width: 20%;
+  height: 500px;
+}
+
+#wizard{
+  width: 20%;
+  height: 500px;
+}
+
+#Trust{
+  width: 20%;
+  height: 500px;
+}
+
+.book-images img{
+  margin-left: 3.5%;
+}
+
+
+
+
+
+footer{
+  background-color: #624545;
+  width: 100%;
+  margin-top: -1.1%;
+  height: 100px;
+}
+
+footer p{
+  color: #fff;
+  text-align: center;
+  padding: 40px 0 0;
+  margin-bottom: 0%;
+}
+
+.socialMedia{
+  margin-left: 90%;
+  color: #fff;
+  font-size: 22px;
+}
+
+#dashboard {
+  color: #fff; /* Default color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
   text-decoration: none;
 }
 
-.navbar b:hover {
-  background-color: rgba(29, 25, 25, 0.479) ;
-  color: rgb(220, 125, 125);
-}
-.navbar a:hover{
-  color: rgb(194, 134, 37);
+#dashboard:hover {
+  color: #ffd700; /* Color change on hover */
 }
 
-.navbar .img {
-  margin-right: 35px;
-}
-
-form {
-  margin-top: 70px;
-  padding: 20px;
-  margin-left: 20%;
-  margin-bottom: 20%;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-input {
-  width: 120%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-.up{
-  width: 270px;
-}
-
-
-button {
-  background-color: #030703;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
+span{
   cursor: pointer;
-  margin-left: 70%;
-}
-
-button:hover {
-  background-color: bisque;
-}
-
-.footer{
-  background-color: rgb(98, 69, 69);
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: baseline;
-  align-content: stretch;
-  color: bisque;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  font-family:cursive ;
-  height: 220px;
-  padding: 25px;
-  box-sizing: border-box;
-  font-size: smaller;
-  margin-top: 15%;
-}
-.f{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: smaller;
-  align-items: baseline;
-  align-content: stretch;
-  color:bisque;
-  background-color: rgb(98, 69, 69);
-}
-.ff{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: stretch;
-  font-size: smaller;
-}
-.fm{
-  background-color: rgb(98, 69, 69);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  font-size: smaller;
-}
-.fl{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  max-width: 300px;
-  margin-left: 100px;
-  font-size: smaller;
-}
-.fc{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  align-content: flex-start;
-  
-}
-.fr{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-  align-items: stretch;
-  align-content: flex-start;
-  font-size: smaller;
-}
-.fi{
-  background-color: rgb(98, 69, 69);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  font-size: smaller;
-  align-content: center;
-  position: relative;
-  bottom: 0;
-  
 }

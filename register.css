@@ -128,11 +128,11 @@ header {
     box-sizing: border-box;
     border-radius: 5px;
   }
-  .row-container {
+  /* .row-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
-  }
+  } */
   
   
   .row-container input {
