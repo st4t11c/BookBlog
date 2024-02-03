@@ -5,55 +5,78 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
     background-color: rgb(79, 50, 50);
-    overflow: hidden;
-    display: flex; 
-    justify-content: space-between; 
-    height: 64px;
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin-right: 25%;
+    list-style: none;
     padding: 0;
-    overflow: hidden;
-    display: flex; 
-    align-items: flex-end;
-
-}
-
-.navbar li {
-    justify-content: right;
     display: flex;
-    align-items: flex-end;
-    justify-items: flex;
-
-}
-.li2{
-    margin-bottom: 1%;
-    font-family:monospace ;
-
+    margin-left: -35%;
 }
 
+.navbar ul li {
+    margin-left: 20px;
+}
 
-.navbar a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 5px 15px;
+.navbar ul li:first-child {
+    margin-left: 0;
+}
+
+.navbar ul li a {
     text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-.navbar b:hover {
-    background-color: rgba(29, 25, 25, 0.479) ;
-    color: rgb(231, 99, 99);
+.navbar ul li a:hover {
+    color: #ffd700;
 }
-.navbar a:hover{
-    color: rgb(194, 134, 37);
+.logo img{
+    width: 10%;
+}
+.h2{
+    margin-left: 40%;
 }
 
-.navbar .img {
-    margin-right: 35px;
+.logo h2{
+    margin-top: -8%;
+    margin-left: 15%;
+}
+
+.logged-in-user {
+    margin-right: 20px;
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+}
+
+.logged-in-user.active .dropdown-menu {
+    display: block;
+}
+
+.logged-in-user .dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.logged-in-user .dropdown-menu a:hover {
+    background-color: #555;
 }
 .content-container {
     display: flex;
@@ -107,77 +130,4 @@ body{
 
 .button:hover {
     background-color: #2575af; 
-}
-.footer{
-    font-family:cursive ;
-    color: bisque;
-}
-.f{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-   
-    align-items: baseline;
-    align-content: stretch;
-    color:bisque;
-    background-color: rgb(98, 69, 69);
-}
-.ff{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: stretch;
-}
-.fm{
-    background-color: rgb(98, 69, 69);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-}
-.fl{
-    display: flex;
-    color: bisque;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    max-width: 300px;
-    margin-left: 150px;
-}
-.fc{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: flex-start;
-    
-}
-.fr{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: stretch;
-    align-content: flex-start;
-}
-.fi{
-    background-color: rgb(98, 69, 69);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    bottom: 0;
-    color: bisque;
-    
 }

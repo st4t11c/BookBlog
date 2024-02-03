@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFE4C4;
+    margin: 0;
+}
+
+/* Additional CSS for the navbar */
+.navbar {
+    background-color: #4F3232;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 10%;
+}
+
+.logo h2{
+    margin-top: -8%;
+    margin-left: 15%;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;    
+    margin-right: 20%;
+}
+
+.containerGif h1{
+	margin-bottom: -5%;
+	margin-top: 5%;
+	margin-left: 20%;
+}
+
+#openingBook{
+	margin-top: 6%;
+	margin-bottom: -30%;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Ensure that padding and border are included in the width */
+}
+
+.container input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #555;
+}
